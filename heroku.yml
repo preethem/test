@@ -1,0 +1,9 @@
+build:
+  docker:
+    web: backend/Dockerfile  # Pointing to the Dockerfile for Flask
+
+release:
+  command: "flask db upgrade"  # Optional release command
+
+run:
+  web: python backend/app.py
